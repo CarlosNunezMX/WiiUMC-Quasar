@@ -1,6 +1,7 @@
 import { app, BrowserWindow, nativeTheme } from 'electron'
 import path from 'path'
-
+import {Precense} from "./richprecense.js"
+const DiscordPrecense = new Precense("827981520690085920");
 try {
   if (process.platform === 'win32' && nativeTheme.shouldUseDarkColors === true) {
     require('fs').unlinkSync(require('path').join(app.getPath('userData'), 'DevTools Extensions'))
@@ -10,6 +11,7 @@ try {
 let mainWindow
 
 function createWindow () {
+  DiscordPrecense.setState({"Cargando","Usando WiiUMC para Escritorio"});
   /**
    * Initial window options
    */

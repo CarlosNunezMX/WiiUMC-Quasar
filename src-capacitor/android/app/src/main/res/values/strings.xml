@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">WiiUMC</string>
+    <string name="title_activity_main">WiiUMC</string>
+    <string name="package_name">com.wiiumc.app</string>
+    <string name="custom_url_scheme">com.wiiumc.app</string>
+</resources>
